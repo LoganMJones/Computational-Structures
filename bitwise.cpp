@@ -28,7 +28,6 @@ void displayOperations(int setA, int setB);
 string setStr(int set);
 
 int main() {
-    cout << "CS 2130 - Computational Structures\tLogan Jones" << endl;
     cout << "This program will ask you for the elements to complete two sets "
          << "& will display the results of various set operations\n\n";
     int setA = getSet("SetA"); // get sets from user and formats as an int
