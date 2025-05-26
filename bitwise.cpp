@@ -1,5 +1,5 @@
 //  Logan Jones
-//  Filename: pg3.cpp
+//  Filename: bitwise.cpp
 //  ---------------------------------------------------------------------------
 //  Reads two sets from the user and then prints several of their operations.
 //  ---------------------------------------------------------------------------
