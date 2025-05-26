@@ -86,9 +86,9 @@ void displayOperations(int setA, int setB) {
 string setStr(int set) {
     string tmp = "{";
     bool first = true;// handle commas
-    for (int i = 0; i <= 9; i++){ // for 0-8 9 is handled separately
+    for (int i = 0; i <= 9; i++){ // for 0-9
         if (set & (1 << i)){ // if in set, add to tmp
-            if (!first){
+            if (!first){ // add comma if not the first element
                 tmp += ",";
             }
             tmp += to_string(i);
