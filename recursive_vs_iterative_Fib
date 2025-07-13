@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std; 
+
+// recursive Fibbonacci
+int rFib(int n){
+   if (n < 2){
+    return n;
+   } 
+   return rFib(n-1) + rFib(n-2);
+}
+
+// iterative Fibbonacci
+int iFib(int n){
+    int fib = 0;
+    int n2 = 0;
+    int n1 = 1;
+    if (n < 2) {
+        return n;
+    }
+    for (int i = 2; i <= n; i++){
+        fib = n1 + n2;
+        n2 = n1;
+        n1 = fib;
+    }
+    return fib;
+}
+
+// main program
+int main(){
+    int i = 0;
+    
+    cout << "Please enter a value to determine the Fibonacci sequence element for: ";
+    cin >> i;
+    cout << endl;
+    cout << "The recursively determined result is: " << rFib(i) << endl;
+
+    cout << "The iterative value is: " << iFib(i) << endl;
+
+    return 0;
+}
